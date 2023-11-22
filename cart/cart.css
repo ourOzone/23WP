@@ -1,0 +1,197 @@
+.title {
+    margin: auto;
+    margin-top: 240px;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.itemContainer {
+    display: flex;
+    width: 80%;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    margin: auto;
+}
+
+
+.itemHeader {
+    display: flex;
+    height: 52px;
+    margin: auto;
+    font-size: 12px;
+}
+
+
+.check {
+    width : 16px;
+    height: 16px;
+    margin: auto;
+}
+
+input[type="checkbox"] {
+    width: 100%;
+    height: 100%;
+}
+
+.itemImg {
+    margin: 0;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+}
+
+.itemInfo {
+    margin: 0;
+    text-align: center;
+    width: 552px;
+    margin: auto;
+}
+
+.itemPrice {
+    margin: 0;
+    text-align: center;
+    width: 120px;
+    margin: auto;
+}
+
+.itemNum {
+    margin: 0;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+}
+
+.itemDeli {
+    margin: 0;
+    text-align: center;
+    width: 120px;
+    margin: auto;
+}
+
+.itemSum {
+    margin: 0;
+    text-align: center;
+    width: 120px;
+    margin: auto;
+}
+
+.itemSelect {
+    margin: 0;
+    text-align: center;
+    width: 120px;
+    margin: auto;
+}
+
+.itemMain {
+    display: flex;
+    height: 132px;
+    margin: auto;
+}
+
+.img {
+    margin-left: 0;
+    width: 120px;
+    height: 120px;
+}
+
+.itemTitle {
+    margin-left: 40px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.itemOption {
+    margin-top: 4px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.numButton {
+    margin-top: 4px;
+}
+
+.selectButton {
+    margin-top: 4px;
+    width: 100%;
+    height: 32px;
+
+}
+
+.itemFooter {
+    display: flex;
+    height: 80px;
+}
+
+.footTitle {
+    margin: auto;
+    font-size: 28px;
+}
+
+.totalPrice {
+    margin: auto;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid #eeeeee;
+  }
+
+.tableContainer {
+    margin-top: 92px;
+}
+
+.orderTable {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.sum {
+    width : 20%;
+}
+
+.deli {
+    width: 20%;
+}
+
+.total {
+    width: 60%;
+}
+
+thead {
+    height: 72px;
+    font-size: 20px;
+}
+
+.tr {
+    font-size: 20px;
+    font-weight: bold;
+    height: 80px;
+    width: 80px;
+}
+
+.orderButton {
+   display: flex;
+   margin: auto;
+   width: 400px;
+   margin-top: 36px;
+}
+
+.orderButton div {
+    margin: auto;
+}
+
+.orderButton div button{
+    height: 80px;
+    width: 180px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+  }

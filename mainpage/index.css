@@ -1,0 +1,60 @@
+div {
+    text-align: center;
+}
+
+
+.text1 {
+    padding: 50px;
+}
+
+.back {
+    position: relative;
+    top: 30px;
+    z-index: -1;
+
+}
+
+.brandimg {
+    height: 300;
+    width: 1000;
+    opacity: 0.3;
+}
+
+.fronttable {
+    
+    position: relative;
+    z-index: 0;
+    top: -200px;
+    background-color: white;
+}
+
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    width: 50%;
+}
+
+.tableimg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.golinkbtn {
+
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 0%;
+    border-width: 1px;
+    border-color: gray;
+    background-color: white;
+    float: left;
+}
