@@ -4,25 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../../../style.css" type="text/css" />
     <link rel="stylesheet" href="../../major.css" />
+    <script src="sendData.js" defer></script>
   </head>
-
   <body>
-    <div class="parent">
-      <div class="card">
-        <img src="../img/com_1.webp" width="300px" height="250px" />
-        <div class="color_board">
-          <div class="color_circle" style="background-color: black"></div>
-          <div class="color_circle" style="background-color: ivory"></div>
+    <div class="button_board">
+      <script>
+        var cardData = [
+          {
+            text: "공과대 과잠",
+            image: "../../../img/점퍼자켓류5.webp",
+            price: "45,000원",
+          },
+          {
+            text: "공과대 돕바",
+            image: "../../../img/돕바오리털3.webp",
+            price: "45,000원",
+          },
+          {
+            text: "공과대 후리스",
+            image: "../../../img/점퍼자켓류8.webp",
+            price: "45,000원",
+          },
+        ];
+
+        for (var i = 0; i < cardData.length; i++) {
+          document.write(`
+        <div class="card">
+          <button class="product_button" onclick="sendData(${i + 1})">
+            <img src="${cardData[i].image}" id="imageData${
+            i + 1
+          }" width="300px" height="250px" />
+            <h3 id="textData${i + 1}">${cardData[i].text}</h3>
+            <hr />
+            <h3 id="priceData${i + 1}">${cardData[i].price}</h3>
+          </button>
         </div>
-        <div class="text">
-          <h3>스융_과잠</h3>
-          <hr />
-          <h3>45,000원</h3>
-        </div>
-      </div>
-      <div class="card">card</div>
-      <div class="card">card</div>
+      `);
+        }
+      </script>
     </div>
   </body>
 </html>
