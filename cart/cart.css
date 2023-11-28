@@ -191,6 +191,7 @@ thead {
 }
 
 .orderButton div button {
+    border: 0;
     height: 60px;
     width: 160px;
     background-color: black; /* 버튼의 배경색을 검정으로 설정 */

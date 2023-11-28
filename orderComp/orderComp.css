@@ -1,0 +1,33 @@
+.compContainer {
+    border: 1px solid #eeeeee;
+    width: 700px;
+    margin: auto;
+    margin-top: 200px;
+    height: 252px;
+}
+
+.title {
+    font-size: 28px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    display: flex;
+    align-items:center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 32px;
+    background-color: black;
+    color: white;
+    border: 0;
+    height: 32px;
+    width: 160px;
+}

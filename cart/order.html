@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>STARSHOP</title>
     <link rel="stylesheet" href="../style.css" type="text/css">
     <link rel="stylesheet" href="cart.css" type="text/css">
     <link rel="stylesheet" href="../template.css" type="text/css">
@@ -236,7 +236,7 @@
         <div>
             <!--여기서 결제해주셔서 감사합니다. 배송조회하기 이런 페이지 추가로 있으면 좋을 듯-->
             <a href="../orderComp/orderComp.html">
-                <button>결제하기</button>
+                <button onClick = 'order()'>결제하기</button>
             </a>
         </div>
 
@@ -244,6 +244,11 @@
     </div>
 
 
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다.');
+        }
+    </script>
 </body>
 
 </html>
