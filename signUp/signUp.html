@@ -13,21 +13,21 @@
 
 <body>
     <p class="firstTag"></p>
+    <div class = "titleArea">회원 가입</div>
+
     <div class="signUpContainer">
-        <p>회원 가입</p>
         <form>
             <div>
-                <label for="id">아이디 (영문소문자/숫자, 4~16자)</label>
-                <input type="text" id="id" name="id" pattern="[a-z0-9]{4,16}" required title="영문소문자/숫자, 4~16자로 입력하세요">
-
+                <label for="id">아이디</label>
+                <input type="text" id="id" name="id" required title="영문소문자/숫자, 4~16자로 입력하세요">
+                <p>(영문소문자/숫자, 4~16자)</p>
             </div>
 
             <div>
-                <label for="password">비밀번호 (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)</label>
-                <input type="password" id="password" name="password"
-                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,16}$" required
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" required
                     title="영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자로 입력하세요">
-
+                <p>(영문/숫자/특수문자 조합, 8자~16자)</p>
             </div>
             <div>
                 <label for="confirmPassword">비밀번호 확인</label>
@@ -45,8 +45,7 @@
             <div>
 
                 <label for="phone">휴대전화</label>
-                <input type="tel" id="phone" name="phone" pattern="\d{3}-\d{4}-\d{4}" placeholder="010-1234-5678"
-                    required title="휴대전화 형식에 맞게 입력하세요">
+                <input type="tel" id="phone" name="phone" required title="휴대전화 형식에 맞게 입력하세요">
 
             </div>
 
@@ -55,11 +54,17 @@
                 <input type="email" id="email" name="email" required>
 
             </div>
-
-
-            <button type="submit">회원가입</button>
+            <button type="submit" onClick = "signUp()">회원가입</button>
         </form>
     </div>
+
+
+    <script>
+        function signUp() {
+            alert('회원가입이 완료되었습니다.')
+            window.location.href = '../mainPage/index.html';
+        }
+    </script>
 
 </body>
 

@@ -1,0 +1,40 @@
+form > div {
+    margin: auto;
+    border-bottom: 1px solid #eeeeee;
+    margin-top: 20px;
+    width: 60%;
+    height: 80px;
+}
+
+form label {
+    display: inline-block;
+    width: 240px;
+    margin: auto;
+}
+
+input {
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+}
+
+form {
+    margin-top: 80px;
+}
+
+p {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 38px;
+    border: 0;
+    height: 68px;
+    width: 200px;
+    background-color: black; /* 버튼의 배경색을 검정으로 설정 */
+    color: white; /* 버튼 안에 써있는 글씨의 색을 하양(흰색)으로 설정 */
+}
+
