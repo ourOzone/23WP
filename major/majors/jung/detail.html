@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="../../major.css" />
+    <link rel="stylesheet" href="../../../../template.css" type="text/css" />
+    <script src="../../../../template.js" defer></script>
+    <script src="getData.js" defer></script>
+  </head>
+  <body>
+    <p class="firstTag"></p>
+    <div class="detail_box">
+      <div class="product_img">
+        <img id="displayImage" width="600px" height="550px" />
+      </div>
+      <div class="price_box">
+        <hr />
+        <div class="product_title">
+          <h3 id="displayText"></h3>
+        </div>
+        <div class="price_information_table">
+          <table>
+            <tbody>
+              <tr>
+                <td>판매가</td>
+                <td class="price" id="displayPrice"></td>
+              </tr>
+              <tr>
+                <td>국내-해외배송</td>
+                <td>국내배송</td>
+              </tr>
+              <tr>
+                <td>배송방법</td>
+                <td>택배</td>
+              </tr>
+              <tr>
+                <td>배송비</td>
+                <td>무료</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr />
+        <div class="initial_table">
+          <table>
+            <tr>
+              <td>이니셜 문구 작<br />성 [선택]</td>
+              <td>
+                <input
+                  id="add_option_0"
+                  name="add_option0"
+                  require="F"
+                  maxlength="8"
+                  class="input_addoption"
+                  value=""
+                  type="text"
+                />
+                <span class="txtByte"
+                  >(<strong class="length">0</strong>/8)</span
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr />
+        <div class="color_size">
+          <table>
+            <tr>
+              <td>사이즈(SIZE)</td>
+              <td>
+                <select
+                  option_product_no="810"
+                  option_select_element="ec-option-select-finder"
+                  option_sort_no="1"
+                  option_type="T"
+                  item_listing_type="C"
+                  option_title="사이즈(Size)"
+                  product_type="product_option"
+                  product_option_area="product_option_810_0"
+                  name="option1"
+                  id="product_option_id1"
+                  class="ProductOption0"
+                  option_style="select"
+                  required="true"
+                >
+                  <option value="*" selected="" link_image="">
+                    [필수] 옵션을 선택해 주세요
+                  </option>
+                  <option value="**" disabled="" link_image="">
+                    ----------------------------------------
+                  </option>
+                  <optgroup label="사이즈(Size)">
+                    <option value="P0000BFE000A" link_image="">XS_85</option>
+                    <option value="P0000BFE000B" link_image="">S_90</option>
+                    <option value="P0000BFE000C" link_image="">M_95</option>
+                    <option value="P0000BFE000D" link_image="">L_100</option>
+                    <option value="P0000BFE000E" link_image="">XL_105</option>
+                    <option value="P0000BFE000F" link_image="">XXL_110</option>
+                    <option value="P0000BFE000G" link_image="">XXXL_115</option>
+                  </optgroup>
+                  <option value="**" disabled="" link_image="">
+                    ----------------------------------------
+                  </option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <hr />
+        <div class="basket_button">
+          <a href="#" onclick="showAlert()">장바구니 담기</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

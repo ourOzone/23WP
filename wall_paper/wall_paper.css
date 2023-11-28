@@ -1,3 +1,10 @@
+#titleArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
 .parent {
   margin: 60px auto;
   width: 90%;
@@ -53,4 +60,11 @@ body {
   background-color: rgb(57, 117, 237);
   color: white;
   pointer-events: none;
+}
+
+.product_button {
+  background-color: white;
+  border: none;
+  width: 100%;
+  height: 100%;
 }

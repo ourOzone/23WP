@@ -1,0 +1,32 @@
+.detail_box {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 530;
+}
+
+.review_en {
+  font-size: 27px;
+  margin-top: 200px;
+  margin-bottom: 10px;
+}
+
+.review_kr {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+#displayTitle {
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#displayText {
+  margin-top: 50px;
+}
+
+hr {
+  border: 1px solid #e2e2e2;
+}

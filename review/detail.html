@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="major.css" />
+    <link rel="stylesheet" href="../style.css" type="text/css" />
+    <script src="../pagnition.js" defer></script>
+    <link rel="stylesheet" href="../template.css" type="text/css" />
+    <script src="../template.js" defer></script>
+    <script>
+      window.onload = function () {
+        // URL에서 데이터를 가져와서 화면에 표시
+        var params = new URLSearchParams(window.location.search);
+        var titleData = params.get("title");
+        var imageData = params.get("image");
+        var textData = params.get("text");
+
+        document.getElementById("displayTitle").textContent = titleData;
+        document.getElementById("displayImage").src = imageData;
+        document.getElementById("displayText").textContent = textData;
+      };
+    </script>
+  </head>
+  <body>
+    <p class="firstTag"></p>
+    <div class="detail_box">
+      <div class="titleArea">
+        <div class="review_en">REVIEW</div>
+        <div class="review_kr">리뷰</div>
+      </div>
+      <hr />
+      <div id="displayTitle"></div>
+      <img id="displayImage" width="350px" height="500px" />
+      <div id="displayText"></div>
+    </div>
+  </body>
+</html>

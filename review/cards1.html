@@ -5,25 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="sendData.js" defer></script>
   </head>
   <body>
     <div class="parent">
-      <div class="card">
-        <img src="img/cards1_1.webp" width="248px" height="250px" />
-        <div class="text">
-          <h3>서울과기대_과잠</h3>
-          <p>서울과학기술대학교 학잠 일반💕</p>
-        </div>
-      </div>
-      <div class="card">card</div>
-      <div class="card">card</div>
-      <div class="card">card</div>
-      <div class="card">card</div>
-      <div class="card">card</div>
-      <div class="card">card</div>
-      <div class="card">card</div>
-      <div class="card">card</div>
-      <div class="card">card</div>
+      <script>
+        var cardData = [
+          {
+            title: "서울과기대_과잠",
+            image: "../img/반팔1.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/반팔2.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/반팔3.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/반팔4.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/점퍼자켓류1.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/점퍼자켓류2.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/점퍼자켓류3.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/점퍼자켓류4.jpg",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/점퍼자켓류5.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/점퍼자켓류6.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/점퍼자켓류7.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/점퍼자켓류8.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/돕바오리털1.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/돕바오리털2.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/돕바오리털3.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/돕바오리털4.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/티셔츠1.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/티셔츠2.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/티셔츠3.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+          {
+            title: "서울과기대_과잠",
+            image: "../img/티셔츠4.webp",
+            text: "서울과학기술대학교 학잠 일반💕",
+          },
+        ];
+        for (var i = 0; i < cardData.length; i++) {
+          document.write(`
+          <div class="card">
+            <button class="product_button" onclick="sendData(${i + 1})">
+              <img src="${cardData[i].image}" id="imageData${
+            i + 1
+          }" width="100%" height="250px" />
+              <h3 id="titleData${i + 1}">${cardData[i].title}</h3>
+              <hr />
+              <h3 id="textData${i + 1}">${cardData[i].text}</h3>
+            </button>
+          </div>
+        `);
+        }
+      </script>
     </div>
   </body>
 </html>
