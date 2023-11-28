@@ -12,6 +12,7 @@
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     margin: 10px;
+    margin: auto;
 }
 
 
@@ -190,11 +191,38 @@ thead {
 }
 
 .orderButton div button {
-    height: 80px;
-    width: 180px;
+    height: 60px;
+    width: 160px;
+    background-color: black; /* 버튼의 배경색을 검정으로 설정 */
+    color: white; /* 버튼 안에 써있는 글씨의 색을 하양(흰색)으로 설정 */
 }
+
 
 label {
     display: block;
     margin-bottom: 8px;
+}
+
+.orderInfo {
+    width: 80%;
+    margin: auto;
+    margin-top: 84px;
+}
+
+.orderInfo label {
+    margin-left: 32px;
+}
+
+.orderInfo input {
+    width: 240px;
+    height: 20px;
+    border-color: 1px solid #eeeeee ;
+    margin-bottom: 10px;
+}
+
+.orderInfo td:first-child {
+    width: 260px;
+    font-size: 16px;
+    height: 60px;
+    border-right: 1px solid white;
 }

@@ -43,14 +43,14 @@ header {
 }
 
 .orderPage a {
+    margin: auto;
     color: gray;
 }
 
-.search {
+.myPage {
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
-    margin: 0;
-    margin-right: 80px;
+    margin-right: 60px;
     text-align: center;
     width: 44px;
 

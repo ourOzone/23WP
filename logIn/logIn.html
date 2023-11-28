@@ -13,14 +13,14 @@
 
 <body>
     <p class="firstTag"></p>
+    <p class="titleArea">LOGIN</p>
     <div class="loginContainer">
-        <p class="title">LOGIN</p>
         <form action="#" method="post">
-            <input type="text" id="id" name="id" placeholder="id" required>
+            <input type="text" id="id" name="id" placeholder="ID" required>
 
-            <input type="password" id="pw" name="pw" placeholder="pw" required>
+            <input type="password" id="pw" name="pw" placeholder="PW" required>
 
-            <button type="submit" class="loginButton">로그인</button>
+            <button type="submit" class="loginButton" onclick="login()">로그인</button>
         </form>
 
         <div class="signUpContainer">
@@ -31,7 +31,17 @@
         </div>
     </div>
 
-
+    <script>
+        function login() {
+            // Your login logic goes here
+            
+            // Display an alert
+            alert('로그인 되었습니다.');
+    
+            // Redirect to ../mainPage/index.html
+            window.location.href = '../mainPage/index.html';
+        }
+    </script>
 
 </body>
 
