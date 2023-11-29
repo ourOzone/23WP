@@ -1,0 +1,51 @@
+.profile {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    height: 84px;
+}
+
+.proInfo {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #eeeeee;
+    margin-left: 20px;
+    padding: 30px;
+    height: 1%;
+}
+
+.img {
+    height: 68px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.dilInfo {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #eeeeee;
+    height: 72px;
+}
+
+.dilInfo td {
+    line-height: 1.6;
+    text-align: center;
+    border-right: 1px solid #eeeeee;
+    width: 10px;
+}
+
+.myInfo {
+    width: 80%;
+    margin: auto;
+    height: 32px;
+    margin-top: 32px;
+    
+}
+
+span {
+    font-size: 20px;
+}

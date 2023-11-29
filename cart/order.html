@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="cart.css" type="text/css">
     <link rel="stylesheet" href="../template.css" type="text/css">
     <script src="../template.js" defer></script>
+    <script src="cart.js" defer></script>
 </head>
 
 <body>
@@ -61,7 +62,7 @@
                 <div class="itemPrice">
                     <strong>99,999원</strong>
                 </div>
-                <div class="itemNum">
+                <div class="itemNum numItem">
                     1
                 </div>
                 <div class="itemSelect">
@@ -95,7 +96,7 @@
                 <div class="itemPrice">
                     <strong>1,400,000원</strong>
                 </div>
-                <div class="itemNum">
+                <div class="itemNum numItem">
                     1
                 </div>
                 <div class="itemSelect">
@@ -128,7 +129,7 @@
                 <div class="itemPrice">
                     <strong>0원</strong>
                 </div>
-                <div class="itemNum">
+                <div class="itemNum numItem">
                     1
                 </div>
                 <div class="itemSelect">
@@ -149,8 +150,8 @@
                 <div class="footTitle">
                     [기본배송]
                 </div>
-                <div class="totalPrice">
-                    상품구매금액 <strong>1,499,999</strong> + 배송비 5,500 = 합계: <strong>1,505,499</strong>
+                <div class="totalPrice" >
+                    상품구매금액 <strong class = "sumPrice">1,499,999</strong> + 배송비 5,500 = 합계: <strong class = "totPrice">1,505,499</strong>
                 </div>
             </div>
         </div>
@@ -213,20 +214,17 @@
 
 
 
-    <div class="oderContainer">
-
-    </div>
     <div class="tableContainer">
         <table class="orderTable">
             <thead>
-                <td class="sum">총 상품금액</td>
+                <td class="sum" class = "sumPrice">총 상품금액</td>
                 <td class="deli">총 배송비</td>
                 <td class="total">결제예정금액</td>
             </thead>
             <tr class="tr">
-                <td>1,499,999</td>
+                <td class = "sumPrice">1,499,999</td>
                 <td>5,500</td>
-                <td>1,505,499</td>
+                <td class = "totPrice">1,505,499</td>
             </tr>
         </table>
 
@@ -236,7 +234,7 @@
         <div>
             <!--여기서 결제해주셔서 감사합니다. 배송조회하기 이런 페이지 추가로 있으면 좋을 듯-->
             <a href="../orderComp/orderComp.html">
-                <button onClick = 'order()'>결제하기</button>
+                <button type = "button" onClick = 'order()'>결제하기</button>
             </a>
         </div>
 

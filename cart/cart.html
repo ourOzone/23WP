@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../style.css" type="text/css">
     <link rel="stylesheet" href="../template.css" type="text/css">
     <script src="../template.js" defer></script>
+    <script src="cart.js" defer></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     <div style = "margin-top: 60px;">
         <form class="itemContainer">
             <div class="check">
-                <input type="checkbox" name="all" value="all">
+                <input type="checkbox" id="checkAll">
             </div>
             <div class="itemHeader">
                 <div class="itemImg">
@@ -49,7 +50,7 @@
         <!--여기부터-->
         <form class="itemContainer">
             <div class="check">
-                <input type="checkbox" name="all" value="all">
+                <input type="checkbox" class="checkboxItem">
             </div>
             <div class="itemMain">
                 <div class="itemImg">
@@ -71,7 +72,7 @@
                         <input type="number" min="1" max="100" step="1" value="1">
                     </div>
                     <div class="numButton">
-                        <button>변경</button>
+                        <button type="button" onclick = "saveVal()">변경</button>
                     </div>
                 </div>
                 <div class="itemDeli">
@@ -104,7 +105,7 @@
         <!--여기부터-->
         <form class="itemContainer">
             <div class="check">
-                <input type="checkbox" name="all" value="all">
+                <input type="checkbox" class="checkboxItem">
             </div>
             <div class="itemMain">
                 <div class="itemImg">
@@ -126,7 +127,7 @@
                         <input type="number" min="1" max="100" step="1" value="1">
                     </div>
                     <div class="numButton">
-                        <button>변경</button>
+                        <button type="button" onclick = "saveVal()">변경</button>
                     </div>
                 </div>
                 <div class="itemDeli">
@@ -159,7 +160,7 @@
         <!--여기부터-->
         <form class="itemContainer">
             <div class="check">
-                <input type="checkbox" name="all" value="all">
+                <input type="checkbox" class="checkboxItem">
             </div>
             <div class="itemMain">
                 <div class="itemImg">
@@ -181,7 +182,7 @@
                         <input type="number" min="1" max="100" step="1" value="1">
                     </div>
                     <div class="numButton">
-                        <button>변경</button>
+                        <button type="button" onclick = "saveVal()">변경</button>
                     </div>
                 </div>
                 <div class="itemDeli">
@@ -216,28 +217,25 @@
                 <div class="footTitle">
                     [기본배송]
                 </div>
-                <div class="totalPrice">
-                    상품구매금액 <strong>1,499,999</strong> + 배송비 5,500 = 합계: <strong>1,505,499</strong>
+                <div class="totalPrice" >
+                    상품구매금액 <strong class = "sumPrice">1,499,999</strong> + 배송비 5,500 = 합계: <strong class = "totPrice">1,505,499</strong>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <div class="oderContainer">
-
-    </div>
     <div class="tableContainer">
         <table class="orderTable">
             <thead>
-                <td class="sum">총 상품금액</td>
+                <td class="sum" class = "sumPrice">총 상품금액</td>
                 <td class="deli">총 배송비</td>
                 <td class="total">결제예정금액</td>
             </thead>
             <tr class="tr">
-                <td>1,499,999</td>
+                <td class = "sumPrice">1,499,999</td>
                 <td>5,500</td>
-                <td>1,505,499</td>
+                <td class = "totPrice">1,505,499</td>
             </tr>
         </table>
 
