@@ -14,18 +14,18 @@ div {
 
 }
 
-.brandimg {
+.golinkimg {
     height: 300;
     width: 1000;
     opacity: 0.3;
 }
 
 .fronttable {
-    
     position: relative;
     z-index: 0;
     top: -200px;
     background-color: white;
+
 }
 
 
@@ -34,6 +34,7 @@ table {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 td {
@@ -48,13 +49,20 @@ td {
 }
 
 .golinkbtn {
-
     width: 80px;
     height: 40px;
     font-size: 12px;
     border-radius: 0%;
     border-width: 1px;
-    border-color: gray;
+    border-color: #e2e2e2;
     background-color: white;
     float: left;
+}
+
+.golinkbtn:hover {
+    background-color: #e2e2e2;
+}
+
+button {
+    cursor: pointer;
 }
