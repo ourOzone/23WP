@@ -1,26 +1,26 @@
 cart = [
     {
-        name: "temp1",
-        option: "option1",
-        price: 10000,
+        name: "서울과기대 다산관 과잠",
+        option: "XS_85",
+        price: 45000,
         num: 1,
-        src: "hamster.jpg",
+        src: "item1.png",
     },
 
     {
-        name: "temp2",
-        option: "option2",
-        price: 20000,
+        name: "서울과기대 용 과잠",
+        option: "L_100",
+        price: 45000,
         num: 2,
-        src: "flea.jpg",
+        src: "item2.png",
     },
 
     {
-        name: "temp3",
-        option: "option3",
-        price: 30000,
+        name: "서울과기대 빅로고 화이트 반팔",
+        option: "XL_105",
+        price: 33000,
         num: 3,
-        src: "goMinSi.jpg",
+        src: "item3.png",
     }
 
 ]
